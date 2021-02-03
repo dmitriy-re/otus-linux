@@ -1,0 +1,19 @@
+#!/bin/bash
+#Install utils
+echo "Install utils"
+yum install -y mdadm
+yum install -y smartmontools
+yum install -y hdparm
+yum install -y gdisk
+#Zero in superblock
+mdadm --zero-superblock --force /dev/sd{b,c,d,e,f,g}
+#Create RAID-5
+echo "Create RAID-5"
+mdadm --create --verbose /dev/md0 -l 5 -n 6 /dev/sd{b,c,d,e,f,g}
+#Make config file for RAID
+echo "Make config file mdadm.conf"
+mkdir /etc/mdadm/
+touch /etc/mdadm/mdadm.conf
+chmod o+w /etc/mdadm/mdadm.conf
+echo "DEVICE partitions" > /etc/mdadm/mdadm.conf
+mdadm --detail --scan --verbose | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf
