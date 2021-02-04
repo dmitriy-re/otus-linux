@@ -1,0 +1,373 @@
+[vagrant@localhost ~]$ sudo ./script
+Install utils
+Failed to set locale, defaulting to C
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.datahouse.ru
+ * extras: mirrors.datahouse.ru
+ * updates: centos-mirror.rbc.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package mdadm.x86_64 0:4.1-6.el7 will be installed
+--> Processing Dependency: libreport-filesystem for package: mdadm-4.1-6.el7.x86_64
+--> Running transaction check
+---> Package libreport-filesystem.x86_64 0:2.1.11-53.el7.centos will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                  Arch       Version                     Repository
+                                                                           Size
+================================================================================
+Installing:
+ mdadm                    x86_64     4.1-6.el7                   base     439 k
+Installing for dependencies:
+ libreport-filesystem     x86_64     2.1.11-53.el7.centos        base      41 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 480 k
+Installed size: 1.0 M
+Downloading packages:
+(1/2): libreport-filesystem-2.1.11-53.el7.centos.x86_64.rp |  41 kB   00:00     
+(2/2): mdadm-4.1-6.el7.x86_64.rpm                          | 439 kB   00:00     
+--------------------------------------------------------------------------------
+Total                                              1.1 MB/s | 480 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libreport-filesystem-2.1.11-53.el7.centos.x86_64             1/2 
+  Installing : mdadm-4.1-6.el7.x86_64                                       2/2 
+  Verifying  : libreport-filesystem-2.1.11-53.el7.centos.x86_64             1/2 
+  Verifying  : mdadm-4.1-6.el7.x86_64                                       2/2 
+
+Installed:
+  mdadm.x86_64 0:4.1-6.el7                                                      
+
+Dependency Installed:
+  libreport-filesystem.x86_64 0:2.1.11-53.el7.centos                            
+
+Complete!
+Failed to set locale, defaulting to C
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.datahouse.ru
+ * extras: mirrors.datahouse.ru
+ * updates: centos-mirror.rbc.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package smartmontools.x86_64 1:7.0-2.el7 will be installed
+--> Processing Dependency: mailx for package: 1:smartmontools-7.0-2.el7.x86_64
+--> Running transaction check
+---> Package mailx.x86_64 0:12.5-19.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch           Version                Repository    Size
+================================================================================
+Installing:
+ smartmontools         x86_64         1:7.0-2.el7            base         546 k
+Installing for dependencies:
+ mailx                 x86_64         12.5-19.el7            base         245 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 791 k
+Installed size: 2.4 M
+Downloading packages:
+(1/2): mailx-12.5-19.el7.x86_64.rpm                        | 245 kB   00:00     
+(2/2): smartmontools-7.0-2.el7.x86_64.rpm                  | 546 kB   00:00     
+--------------------------------------------------------------------------------
+Total                                              1.6 MB/s | 791 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mailx-12.5-19.el7.x86_64                                     1/2 
+  Installing : 1:smartmontools-7.0-2.el7.x86_64                             2/2 
+  Verifying  : mailx-12.5-19.el7.x86_64                                     1/2 
+  Verifying  : 1:smartmontools-7.0-2.el7.x86_64                             2/2 
+
+Installed:
+  smartmontools.x86_64 1:7.0-2.el7                                              
+
+Dependency Installed:
+  mailx.x86_64 0:12.5-19.el7                                                    
+
+Complete!
+Failed to set locale, defaulting to C
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.datahouse.ru
+ * extras: mirrors.datahouse.ru
+ * updates: centos-mirror.rbc.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package hdparm.x86_64 0:9.43-5.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch             Version                 Repository      Size
+================================================================================
+Installing:
+ hdparm           x86_64           9.43-5.el7              base            83 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 83 k
+Installed size: 152 k
+Downloading packages:
+hdparm-9.43-5.el7.x86_64.rpm                               |  83 kB   00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : hdparm-9.43-5.el7.x86_64                                     1/1 
+  Verifying  : hdparm-9.43-5.el7.x86_64                                     1/1 
+
+Installed:
+  hdparm.x86_64 0:9.43-5.el7                                                    
+
+Complete!
+Failed to set locale, defaulting to C
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.datahouse.ru
+ * extras: mirrors.datahouse.ru
+ * updates: centos-mirror.rbc.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package gdisk.x86_64 0:0.8.10-3.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch             Version                  Repository      Size
+================================================================================
+Installing:
+ gdisk           x86_64           0.8.10-3.el7             base           190 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 190 k
+Installed size: 660 k
+Downloading packages:
+gdisk-0.8.10-3.el7.x86_64.rpm                              | 190 kB   00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : gdisk-0.8.10-3.el7.x86_64                                    1/1 
+  Verifying  : gdisk-0.8.10-3.el7.x86_64                                    1/1 
+
+Installed:
+  gdisk.x86_64 0:0.8.10-3.el7                                                   
+
+Complete!
+mdadm: Unrecognised md component device - /dev/sdb
+mdadm: Unrecognised md component device - /dev/sdc
+mdadm: Unrecognised md component device - /dev/sdd
+mdadm: Unrecognised md component device - /dev/sde
+mdadm: Unrecognised md component device - /dev/sdf
+mdadm: Unrecognised md component device - /dev/sdg
+Create RAID-5
+mdadm: layout defaults to left-symmetric
+mdadm: layout defaults to left-symmetric
+mdadm: chunk size defaults to 512K
+mdadm: size set to 253952K
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Create config file mdadm.conf
+Create GPT and partitions
+Information: You may need to update /etc/fstab.
+
+Information: You may need to update /etc/fstab.                           
+
+Information: You may need to update /etc/fstab.                           
+
+Information: You may need to update /etc/fstab.                           
+
+Information: You may need to update /etc/fstab.                           
+
+Make ext4                                                                 
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+Stride=512 blocks, Stripe width=2560 blocks
+62744 inodes, 250880 blocks
+12544 blocks (5.00%) reserved for the super user
+First data block=1
+Maximum filesystem blocks=33816576
+31 block groups
+8192 blocks per group, 8192 fragments per group
+2024 inodes per group
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done 
+
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+Stride=512 blocks, Stripe width=2560 blocks
+63488 inodes, 253440 blocks
+12672 blocks (5.00%) reserved for the super user
+First data block=1
+Maximum filesystem blocks=33816576
+31 block groups
+8192 blocks per group, 8192 fragments per group
+2048 inodes per group
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done 
+
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+Stride=512 blocks, Stripe width=2560 blocks
+64000 inodes, 256000 blocks
+12800 blocks (5.00%) reserved for the super user
+First data block=1
+Maximum filesystem blocks=33816576
+32 block groups
+8192 blocks per group, 8192 fragments per group
+2000 inodes per group
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done 
+
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+Stride=512 blocks, Stripe width=2560 blocks
+63488 inodes, 253440 blocks
+12672 blocks (5.00%) reserved for the super user
+First data block=1
+Maximum filesystem blocks=33816576
+31 block groups
+8192 blocks per group, 8192 fragments per group
+2048 inodes per group
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done 
+
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+Stride=512 blocks, Stripe width=2560 blocks
+62744 inodes, 250880 blocks
+12544 blocks (5.00%) reserved for the super user
+First data block=1
+Maximum filesystem blocks=33816576
+31 block groups
+8192 blocks per group, 8192 fragments per group
+2024 inodes per group
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done 
+
+Mount partitions
+[vagrant@localhost ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        489M     0  489M   0% /dev
+tmpfs           496M     0  496M   0% /dev/shm
+tmpfs           496M  6.7M  489M   2% /run
+tmpfs           496M     0  496M   0% /sys/fs/cgroup
+/dev/sda1        40G  3.1G   37G   8% /
+tmpfs           100M     0  100M   0% /run/user/1000
+/dev/md0p1      234M  2.1M  215M   1% /raid/part1
+/dev/md0p2      236M  2.1M  218M   1% /raid/part2
+/dev/md0p3      239M  2.1M  220M   1% /raid/part3
+/dev/md0p4      236M  2.1M  218M   1% /raid/part4
+/dev/md0p5      234M  2.1M  215M   1% /raid/part5
+[vagrant@localhost ~]$ lsblk
+NAME      MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sda         8:0    0    40G  0 disk  
+`-sda1      8:1    0    40G  0 part  /
+sdb         8:16   0   250M  0 disk  
+`-md0       9:0    0   1.2G  0 raid5 
+  |-md0p1 259:0    0   245M  0 md    /raid/part1
+  |-md0p2 259:1    0 247.5M  0 md    /raid/part2
+  |-md0p3 259:2    0   250M  0 md    /raid/part3
+  |-md0p4 259:3    0 247.5M  0 md    /raid/part4
+  `-md0p5 259:4    0   245M  0 md    /raid/part5
+sdc         8:32   0   250M  0 disk  
+`-md0       9:0    0   1.2G  0 raid5 
+  |-md0p1 259:0    0   245M  0 md    /raid/part1
+  |-md0p2 259:1    0 247.5M  0 md    /raid/part2
+  |-md0p3 259:2    0   250M  0 md    /raid/part3
+  |-md0p4 259:3    0 247.5M  0 md    /raid/part4
+  `-md0p5 259:4    0   245M  0 md    /raid/part5
+sdd         8:48   0   250M  0 disk  
+`-md0       9:0    0   1.2G  0 raid5 
+  |-md0p1 259:0    0   245M  0 md    /raid/part1
+  |-md0p2 259:1    0 247.5M  0 md    /raid/part2
+  |-md0p3 259:2    0   250M  0 md    /raid/part3
+  |-md0p4 259:3    0 247.5M  0 md    /raid/part4
+  `-md0p5 259:4    0   245M  0 md    /raid/part5
+sde         8:64   0   250M  0 disk  
+`-md0       9:0    0   1.2G  0 raid5 
+  |-md0p1 259:0    0   245M  0 md    /raid/part1
+  |-md0p2 259:1    0 247.5M  0 md    /raid/part2
+  |-md0p3 259:2    0   250M  0 md    /raid/part3
+  |-md0p4 259:3    0 247.5M  0 md    /raid/part4
+  `-md0p5 259:4    0   245M  0 md    /raid/part5
+sdf         8:80   0   250M  0 disk  
+`-md0       9:0    0   1.2G  0 raid5 
+  |-md0p1 259:0    0   245M  0 md    /raid/part1
+  |-md0p2 259:1    0 247.5M  0 md    /raid/part2
+  |-md0p3 259:2    0   250M  0 md    /raid/part3
+  |-md0p4 259:3    0 247.5M  0 md    /raid/part4
+  `-md0p5 259:4    0   245M  0 md    /raid/part5
+sdg         8:96   0   250M  0 disk  
+`-md0       9:0    0   1.2G  0 raid5 
+  |-md0p1 259:0    0   245M  0 md    /raid/part1
+  |-md0p2 259:1    0 247.5M  0 md    /raid/part2
+  |-md0p3 259:2    0   250M  0 md    /raid/part3
+  |-md0p4 259:3    0 247.5M  0 md    /raid/part4
+  `-md0p5 259:4    0   245M  0 md    /raid/part5
+

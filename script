@@ -11,9 +11,21 @@ mdadm --zero-superblock --force /dev/sd{b,c,d,e,f,g}
 echo "Create RAID-5"
 mdadm --create --verbose /dev/md0 -l 5 -n 6 /dev/sd{b,c,d,e,f,g}
 #Make config file for RAID
-echo "Make config file mdadm.conf"
+echo "Create config file mdadm.conf"
 mkdir /etc/mdadm/
 touch /etc/mdadm/mdadm.conf
 chmod o+w /etc/mdadm/mdadm.conf
 echo "DEVICE partitions" > /etc/mdadm/mdadm.conf
 mdadm --detail --scan --verbose | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf
+echo "Create GPT and partitions"
+parted -s /dev/md0 mklabel gpt
+parted /dev/md0 mkpart primary ext4 0% 20%
+parted /dev/md0 mkpart primary ext4 20% 40%
+parted /dev/md0 mkpart primary ext4 40% 60%
+parted /dev/md0 mkpart primary ext4 60% 80%
+parted /dev/md0 mkpart primary ext4 80% 100%
+echo "Make ext4"
+for i in $(seq 1 5); do sudo mkfs.ext4 /dev/md0p$i; done
+sudo mkdir -p /raid/part{1,2,3,4,5}
+echo "Mount partitions"
+for i in $(seq 1 5); do sudo mount /dev/md0p$i /raid/part$i; done
